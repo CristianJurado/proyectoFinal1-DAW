@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="icon" type="image/x-icon" href="../IMG/favicon.png">
+    <meta name="author" content="Cristian Jurado López" />
+</head>
+<body>
+    <div class="arribaformulario">
+    <img src="../IMG/logo.png" alt="Logo">
+    </div>
+    <div class="container">
+        <h2>Entrar</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="nombre"></label>
+                <input type="text" placeholder="Nombre*" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje"></label>
+                <input type="password" placeholder="Contraseña*" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="terminos">
+            <p>Al entrar, aceptas las Condiciones de servicio y la Política de privacidad</p>
+        </div>
+        <div class="pieformulario">
+            <p>¿Necesitas una cuenta? <a href="./formulario.html">Registrarse</a></p>
+        </div>
+    </div>
+</body>
+</html>
