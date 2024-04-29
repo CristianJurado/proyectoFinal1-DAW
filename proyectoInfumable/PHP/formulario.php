@@ -4,7 +4,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="usuarios";
+$dbname="proyecto";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
 
@@ -26,6 +26,8 @@ $sql="INSERT INTO usuarios (nombre,email,password) VALUES ('$nombre','$email', '
 
 if($conn->query($sql)===true){
     echo "Registro correcto";
+    header("Location: ../HTML/index.html");
+    exit();
 } else {
     echo "Error al registrar el usuario: " .$conn->error;
 }

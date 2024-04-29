@@ -4,7 +4,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="usuarios";
+$dbname="proyecto";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
 
@@ -25,7 +25,7 @@ if($result->num_rows >0){
     //Verificamos si la contraseña coincide con la que tenemos en nuestra base de datos
     if (password_verify($password, $row['password'])){
         //Contraseña correcta
-        header("Location: index.html");
+        header("Location: ../HTML/index.html");
         exit();
     }else {
         //contraseña incorrecta
