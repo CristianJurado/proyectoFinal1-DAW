@@ -1,4 +1,3 @@
-
 <?php
 
 //Conexion a la base de datos
@@ -18,21 +17,7 @@ $nombre = $_POST['nombre'];
 $password = $_POST['password'];
 
 $sql = "SELECT * FROM usuarios WHERE nombre='$nombre'";
-$sql2 = "SELECT * FROM usuarios WHERE nombre='$nombre' AND rol='administrador'";
 $result = $conn->query($sql);
-$result2 = $conn->query($sql2);
-
-if($result2->num_rows > 0){
-    $row = $result2->fetch_assoc();
-    if (password_verify($password, $row['password'])){
-        //Contraseña correcta
-        header("Location: ../PHP/indexAdmin.php");
-        exit();
-    }else {
-        //contraseña incorrecta
-        echo"Contraseña incorrecta";
-    }
-}
 
 if($result->num_rows >0){
     //Usuario encontrado

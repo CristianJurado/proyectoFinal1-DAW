@@ -88,8 +88,7 @@ a{
     text-align: center;
 }
 
-tr, th{
-    border: 1px #E9E9E9 solid;
-    border-radius: 1px;
+table tr th{ 
+    border-bottom: 1px #E9E9E9 solid;
 }
 
