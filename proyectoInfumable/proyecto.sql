@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-04-2024 a las 19:56:07
+-- Tiempo de generación: 13-05-2024 a las 10:36:16
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -67,6 +67,15 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `email`, `password`, `rol`) VALUES
+(1, 'cristian', 'cristian@gmail.com', '$2y$10$6oF07E7Tt9qeclu3c5F3TeRy4Dc9Cu3UuklkZHgQxu2AXEfA3ZprS', 'administrador'),
+(2, 'alex', 'alex@gmail.com', '$2y$10$GhT3P2PbNbpCGF8NkUV0yuLhz6oj2U05NJM9QeOUKZRNxsVEecTVa', 'usuario'),
+(3, 'pedro', 'pedro@gmail.com', '$2y$10$7QcT8OhVr1wy8exUvUBLz.0HahSvSIHTykmkBHMVL/i8lDzy2dt.e', 'usuario');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -96,7 +105,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
