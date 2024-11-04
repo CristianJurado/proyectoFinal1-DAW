@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff; 
+    color: black; /* Color de texto */
+}
+
+.arribaformulario{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.arribaformulario img{
+    width: 11%;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #0f0f0f; /* Color de texto */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="number"],
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #aaa; /* Color del borde de los campos */
+    border-radius: 2px;
+    background-color: #fff; /* Color de fondo de los campos */
+    color: #0f0f0f; /* Color de texto de los campos */
+    font-size: medium;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f0f0f; /* Color de fondo del botón similar al de Netflix */
+    color: #fff; /* Color de texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006340; /* Cambio de color de fondo al pasar el ratón */
+}
+
+
+.tabla{
+    max-width: 50%;
+    margin: 50px auto;
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #006340;
+}
+
+.tabla2{
+    max-width: auto;
+    margin: 50px auto;
+    background-color: #fff; /* Color de fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+table tr th{ 
+    border-bottom: 1px #E9E9E9 solid;
+}
+
